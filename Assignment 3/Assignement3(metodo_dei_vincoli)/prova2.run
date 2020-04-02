@@ -1,0 +1,15 @@
+#RESET
+reset;
+
+#LOAD THE MODEL
+model C:\Users\mvill\Desktop\ExAMPL\Assignement3\prova2.mod;
+data C:\Users\mvill\Desktop\ExAMPL\Assignement3\prova2.dat; 
+
+#CHANGE THE SOLVER
+option solver cplex;
+
+#SOLVE
+solve;
+
+#SHOW RESULTS
+display S, T, d, X, p[2, 1];
